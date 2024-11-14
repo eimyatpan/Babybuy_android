@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/whitesh"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/customborder"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <!-- Media -->
+        <com.google.android.material.imageview.ShapeableImageView
+            app:shapeAppearanceOverlay="@style/roundedImageView"
+            android:id="@+id/iv_productImage"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:contentDescription="Image description"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <!-- Title, secondary and supporting text -->
+            <TextView
+                android:id="@+id/tv_productName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/darkSlateGray"
+                android:textSize="16sp"
+                tools:text="String/Title of the card"
+                />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_category"
+                android:layout_width="wrap_content"
+                android:textColor="@color/lightGray"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:fontFamily="@font/roboto"
+                tools:text="Toy"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    tools:ignore="MissingConstraints">
+                    <ImageView
+                        android:id="@+id/iv_ruIcon"
+                        android:layout_width="20dp"
+                        android:layout_height="20sp"
+                        android:src="@drawable/dollar_sign"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                       />
+                    <TextView
+                        android:id="@+id/tv_productPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/lightGray"
+                        tools:text="Prince"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/roboto"
+                        app:layout_constraintLeft_toRightOf="@id/iv_ruIcon"
+                            />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:ignore="MissingConstraints">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/tb_addNow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:backgroundTint="@color/primary2"
+                    android:textSize="12dp"
+                    android:textColor="@color/secondary2"
+                    android:fontFamily="@font/poppins"
+                    app:icon="@drawable/add_white_icon_24"
+                    style="?attr/materialIconButtonStyle"
+                    app:iconTint="@color/secondary2"
+                    />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/tb_deleteNow"
+                    android:textColor="@color/secondary2"
+                    android:layout_width="wrap_content"
+                    app:icon="@drawable/delete_icon"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/softCoral"
+                    android:fontFamily="@font/poppins"
+                    style="?attr/materialIconButtonStyle"
+                    app:iconTint="@color/secondary2"
+                    />
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

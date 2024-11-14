@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/secondary2"
+    tools:context=".dashboard.Dashboard">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fcv_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_nav"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_editor_absoluteX="0dp"
+        />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
+        android:background="@color/primary2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:itemTextAppearanceActive="@color/white"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/menu_bottom_view"
+        app:itemIconTint="@color/nav_item_color"
+        app:itemTextColor="@color/nav_text_color"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

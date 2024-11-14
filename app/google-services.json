@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "447986545519",
+    "firebase_url": "https://cet343-babybuy-firebase-default-rtdb.firebaseio.com",
+    "project_id": "cet343-babybuy-firebase",
+    "storage_bucket": "cet343-babybuy-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:447986545519:android:3eff5df469a08106362e9a",
+        "android_client_info": {
+          "package_name": "pan.pan.CET343BabyBuy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVPvs2mUnj6ls1a580TGtqVfJ_fX2Z038"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:447986545519:android:2cb433aa58244d73362e9a",
+        "android_client_info": {
+          "package_name": "pan.pan.cet343babybuy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVPvs2mUnj6ls1a580TGtqVfJ_fX2Z038"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
